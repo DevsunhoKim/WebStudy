@@ -1,0 +1,50 @@
+<!--
+	optiongroup 
+	
+	fieldset : 입력창을 그룹으로 모아서 처리
+	legend : 테두리
+	label 
+	=> 가급적이면 table을 사용하지 않는다 (권장 사항)
+	 => CSS
+	  display : table , table-row , table-cell
+	            <table>  <tr>         <td>
+			    table-column <th>
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<select>
+	<optgroup label="Back-End">
+		<option>자바(프로그래밍 언어)</option>
+		<option>데이터베이스 (오라클,MySQL)</option>
+		<option>JSP</option>
+		<option>Spring</option>
+		<option>Spring-Boot</option>
+	</optgroup>
+	<optgroup label="Front-End">
+		<option>HTML/CSS</option>
+		<option>JavaScript</option>
+		<option>Ajax</option>
+		<option>VueJS(Vue3,Vuex)</option>
+		<option>React(Redux,React-Query,Hooks)</option>
+	</optgroup>
+	
+	<p>
+		<fieldset>
+			<legend>개인정보</legend>
+			<table>
+				<tr>
+					<td><label for="name">이름</label></td>
+					<td><input type="text" id="name" size="15"></td>
+						
+					
+				</tr>
+			</table>
+		</fieldset>
+</select>
+</body>
+</html>
