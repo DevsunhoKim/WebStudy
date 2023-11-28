@@ -1,10 +1,10 @@
 package com.sist.dao;
 import java.util.*;
 public class BoardVO {
-	private int no;
-	private String name,subject,content,pwd;
-	private int hit;
-	private Date regdate;
+    private int no;
+    private String name,subject,content,pwd;
+    private int hit;
+    private Date regdate;
 	public int getNo() {
 		return no;
 	}
@@ -47,5 +47,5 @@ public class BoardVO {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
-	
+	  
 }

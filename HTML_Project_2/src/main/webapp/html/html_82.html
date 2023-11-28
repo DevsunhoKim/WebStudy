@@ -1,57 +1,75 @@
 <!--
-	<table> : 목록 출력
-		
-	<table>
-	   |
-	  <tr>
-	   |
-	 ======
-	 |     |
-	<th>  <td>
-   제목    실제 데이터
-   
-   <tr>===========================
-	   <td></td><td></td><td></td>
-	   =========================== </tr> 
-	   
-   <tr>===========================
-	   <td></td><td></td><td></td>
-	   =========================== </tr> 
-	
-	
-	
- -->
+	  <table> : 목록출력 
+	  <table>
+		 |
+		<tr>
+		 |
+	   =====
+	   |    |
+	  <th> <td>
+	  제목  실제 출력데이터
+	  
+	  <tr>============================
+		<td></td> <td></td> <td></td>
+	  ================================</tr>
+	  
+	  <tr>============================
+		<td></td> <td></td> <td></td>
+	  ================================</tr>
+	  
+	  <tr>============================
+		<td></td> <td></td> <td></td>
+	  ================================</tr>
+	  <tr>안에 <th>,<td>가 반드시 일치 
+		  
+	  => 1. <td>,<th> 
+		    <td width="100, 20%" align="left|center|right">
+				    => default:left
+-->
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+	td{
+		text-align: center;
+	}
+</style>
 </head>
 <body>
-  <table>
+  <h1>테이블 태그</h1>
+  <table border="1" width="500"> <!--테두리 -->
+     <thead>
 	  <tr>
-		  <thead>
-		  <th width="10%" align="center">학번</th>
-		  <th width="45%" align="center">이름</th>
-		  <th width="15%" align="center">국어</th>
-		  <th width="15%" align="center">영어</th>
-		  <th width="15%" align="center">수학</th>
-		  </thead>
+		  <th width="10%">학번</th>
+		  <th width="45%">이름</th>
+		  <th width="15%">국어</th>
+		  <th width="15%">영어</th>
+		  <th width="15%">수학</th>
+	  </tr>
+	 </thead>
+	 <tbody>
+	  <tr>
+		  <td width="10%">1</td>
+		  <td width="45%">홍길동</td>
+		  <td width="15%">90</td>
+		  <td width="15%">90</td>
+		  <td width="15%">90</td>
 	  </tr>
 	  <tr>
-		  <th>1</th>
-		  <th>홍길동</th>
-		  <th>90</th>
-		  <th>80</th>
-		  <th>70</th>
+		  <td width="10%">1</td>
+		  <td width="45%">홍길동</td>
+		  <td width="15%">90</td>
+		  <td width="15%">90</td>
+		  <td width="15%">90</td>
 	  </tr>
-	  <tr>
-		  <th>2</th>
-		  <th>박문수</th>
-		  <th>95</th>
-		  <th>85</th>
-		  <th>75</th>
-	  </tr>
+	 </tbody>
+	 <tfoot>
+		 <tr>
+			 <td colspan="5" align="right">인원:2명</td>
+		 </tr>
+	 </tfoot>
   </table>
 </body>
 </html>

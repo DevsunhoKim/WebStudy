@@ -1,0 +1,90 @@
+<!--
+	목록 출력 : 태그 
+	***1. ul : unorder list => 메뉴
+	      동반하는 태그 
+	        <ul>
+			 |
+			<li> => 목록 출력 
+				
+	   형식) 
+	        <ul>
+			  <li>자바</li>
+			  <li>오라클</li>
+			  <li>HTML/CSS</li>
+			</ul>
+	2. ol : order list 
+	        <ol>
+			 |
+			<li>
+		형식)
+		    <ol>
+				<li>자바</li>
+				<li>오라클</li>
+				<li>HTML/CSS</li>
+			</ol>
+	3. dl : data list => 상세보기 
+	***4. table : 전체 데이터 (뮤직,영화...)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!--<style type="text/css">
+	ul{
+		list-style: none;
+		display: inline;
+	}
+	li{
+		display: inline;
+	}
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	a:hover{
+		color: cyan;
+		text-decoration: underline;
+	}
+</style>-->
+</head>
+<body>
+  <hr>
+  <ul> <!-- 대부분의 메뉴는 ul을 이용한다 : 여느 태그 / 닫는 태그 , block--> 
+	  <li><a href="#">홈</a></li>
+	  <li><a href="#">회원</a></li>
+	  <li><a href="#">여행</a></li>
+	  <li><a href="#">레시피</a></li>
+	  <li><a href="#">추천</a></li>
+	  <li><a href="#">커뮤니티</a></li>
+	  <li><a href="#">마이페이지</a></li>
+  </ul>
+  <hr>
+  <ol>
+	 <li>자바</li> 
+	 <li>오라클</li> 
+	 <li>HTML/CSS</li> 
+  </ol>
+  <hr>
+  <ol style="list-style-type: upper-alpha;">
+	  <li>
+		  <b>다음 중 동물이 아닌 것은?</b>
+		  <ol>
+			  <li>개</li>
+			  <li>돼지</li>
+			  <li>말</li>
+			  <li>사과</li>
+		  </ol>
+	  </li>
+	  <li>
+		  <b>다음 중 과일이 아닌 것은?</b>
+		  <ol>
+			  <li>사과</li>
+			  <li>배</li>
+			  <li>수박</li>
+			  <li>보쌈</li>
+		  </ol>
+	  </li>
+  </ol>
+</body>
+</html>
