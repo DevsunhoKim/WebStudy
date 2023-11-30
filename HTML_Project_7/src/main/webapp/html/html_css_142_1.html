@@ -1,0 +1,46 @@
+<!--
+	:checked
+	:enable
+	:disable
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	input:disabled{
+		background-color: rgb(192, 192, 192);
+		border: 1px solid #ccc;
+	}
+	input:checked + span{
+		color: magenta;
+	}
+</style>
+</head>
+<body>
+	<fieldset>
+		<legend>사용자 정보</legend>
+		<label for="name">이름</label>
+		<input type="text" id="name" size="20" disabled>
+	</fieldset>
+	<fieldset>
+		<legend>교육 쿼리</legend>
+		<p>전체 과정</p>
+		<input type="radio" name="subject" value="자바"><span>자바</span>
+		<input type="radio" name="subject" value="오라클"><span>오라클</span>
+		<input type="radio" name="subject" value="웹"><span>웹(HTML/CSS/JavaScript)</span>
+		<input type="radio" name="subject" value="Spring"><span>Spring</span>
+		<input type="radio" name="subject" value="파이썬"><span>파이썬</span>
+	</fieldset>
+	<fieldset>
+		<legend>취미</legend>
+		<p>취미 전체</p>
+		<input type="checkbox" name="hobby" value="운동"><span>운동</span>
+		<input type="checkbox" name="hobby" value="독서"><span>독서</span>
+		<input type="checkbox" name="hobby" value="낚시"><span>낚시</span>
+		<input type="checkbox" name="hobby" value="여행"><span>여행</span>
+		<input type="checkbox" name="hobby" value="게임"><span>게임</span>
+	</fieldset>
+</body>
+</html>

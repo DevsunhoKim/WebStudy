@@ -1,0 +1,98 @@
+<!--
+	
+	상태 선택자
+	:checked = 선택이 된 경우
+	   => radio , chechbox => drag / drop
+	      ================
+	       => 이메일
+	***:focus => input , 메뉴
+	===========================
+	:enable => 사용이 가능
+	:disable => 사용이 안되는 경우
+	============================== 좋아요 , 찜하기
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	nav.navi ul{
+		list-style: none;
+	}
+	nav.navi ul li{
+		display: inline-block;
+		width: 100px;
+		height: 35px;
+		text-align: center;
+	}
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	nav.navi a:hover,nav.navi a:focus{
+		background-color: #ddebb1;
+		/*
+		 color: red;
+		 color: #fff => 16진법
+		 color: rgb(200,200,200)
+		 color: rgba(200,200,200,1);
+		*/
+		color: #fff;
+		
+	}
+		
+</style>
+</head>
+<body>
+  <nav class="navi">
+	  <ul>
+		  <li><a href="#">홈</a></li>
+		  <li><a href="#">회원</a></li>
+		  <!-- 
+			  회원
+			   회원가입
+			   회원수정
+			   아이디 찾기 / 비밀번호 찾기
+			   로그인 / 로그아웃
+		  -->
+		  <li><a href="#">맛집</a></li>
+		  <!--
+			  맛집
+			   목록출력
+			   상세보기
+			   맛집예약
+			   맛집검색
+			   좋아요 / 찜하기
+		   -->
+		  <li><a href="#">레시피</a></li>
+		  <!--
+			  레시피
+			   목록출력
+			   상세보기
+			   레시피 추천
+			   레시피 등록
+		   -->
+		  <li><a href="#">서울여행</a></li>
+		  <!--
+			  서울여행
+			   목록 / 상세보기
+			   코스 추천
+			  -->
+		  <li><a href="#">커뮤니티</a></li>
+		  <!-- 
+			  커뮤니티
+			   자유게시판
+			   묻고 답하기
+			   공지 사항
+			   자료실
+			  -->
+		  <li><a href="#">마이페이지</a></li>
+		  <!--
+			  마이페이지 / 관리자 페이지
+			  -->
+	  </ul>
+	  
+  </nav>
+</body>
+</html>
