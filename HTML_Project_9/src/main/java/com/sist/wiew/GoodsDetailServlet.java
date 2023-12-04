@@ -44,6 +44,7 @@ public class GoodsDetailServlet extends HttpServlet {
 		out.write("$(function(){");
 		out.write("$('.ups').click(function(){");
 		out.write("$('.updates').hide();");
+		out.write("$('.ups').text('수정');");
 		out.write("let a=$(this).attr('data-no');");
 		out.write("if(i==0){");
 		out.write("$('#m'+a).show();");
@@ -124,7 +125,7 @@ public class GoodsDetailServlet extends HttpServlet {
 		out.write(html);
 		
 		out.write("<div style=\"height:30px\"></div>");
-		out.write("<div class=row>");
+		out.write("<div class=col-sm-8>");
 		// 댓글 출력
 		out.write("<table class=table>");
 		out.write("<tr>");
@@ -162,8 +163,8 @@ public class GoodsDetailServlet extends HttpServlet {
 			out.write("<input type=hidden name=rno value="+rvo.getRno()+">");
 			out.write("<input type=hidden name=gno value="+no+">");
 			out.write("<input type=hidden name=typeno value="+type+">");
-			out.write("<textarea name=msg rows=4 cols=60 style=\"float:left\">"+rvo.getMsg()+"</textarea>");
-			out.write("<input type=submit value=\"댓글 수정\" style=\"width:100px;height:89px;background:blue;color:white\">");
+			out.write("<textarea name=msg rows=4 cols=50 style=\"float:left\">"+rvo.getMsg()+"</textarea>");
+			out.write("<input type=submit value=\"댓글 수정\" style=\"width:80px;height:89px;background:blue;color:white\">");
 			out.write("</form>");
 			// 처리하는 서블릿(JSP) / 화면 출력 서블릿(JSP)
 			// => 화면이 없는 (HTML) => 자체에서 처리 
@@ -185,6 +186,8 @@ public class GoodsDetailServlet extends HttpServlet {
 			out.write("<input type=submit value=\"댓글 쓰기\" style=\"width:100px;height:89px;background:blue;color:white\">");
 			out.write("</form>");
 		}
+		out.write("</div>");
+		out.write("<div class=col-sm-4>");
 		out.write("</div>");
 		out.write("</body>");
 		out.write("</html>");

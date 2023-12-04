@@ -1,0 +1,45 @@
+<!-- 
+	각 태그마다 속성
+	============
+	inline === === ===
+	block : 태그가 브라우저 한 줄 전체를 가지고 있다
+	
+	=> 변경할 때 사용하는 CSS => display
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	img {
+		width: 200px;
+		height: 250px;
+		display: block;
+		margin-top: 20px;
+	}
+	div {
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+		background-color: #333;
+		
+	}
+	/*
+	 width , height 가 지정된 경우에는 inline block 
+	 = 가시 속성
+	 display:none => 감춘다
+	 display:block => 세로 출력
+	 display:inline => 가로출력
+	
+	
+	*/
+</style>
+</head>
+<body>
+	<img src="">
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</body>
+</html>
