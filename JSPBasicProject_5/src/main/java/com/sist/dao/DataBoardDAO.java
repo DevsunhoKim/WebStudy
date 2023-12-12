@@ -1,7 +1,7 @@
 package com.sist.dao;
 import java.util.*;
 import java.sql.*;
-import com.sist.common.*;
+import com.sist.dbcp.*;
 // 재사용이 많은 경우, 유효한 내용이 있는 경우
 /*
 		1. JDBC
@@ -15,7 +15,7 @@ import com.sist.common.*;
 public class DataBoardDAO {
 	private Connection conn;
 	private PreparedStatement ps;
-	private CreateConnection dbconn=new CreateConnection();
+	private CreateDBCPConnection dbconn=new CreateDBCPConnection();
 	
 	public List<DataBoardBean> boardListData(){
 		List<DataBoardBean> list=new ArrayList<DataBoardBean>();
