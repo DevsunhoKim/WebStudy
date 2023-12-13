@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sawon-info>
+ <list sabun="1" name="홍길동" sex="남자"/>
+ <list sabun="2" name="홍길동2" sex="남자"/>
+ <list sabun="3" name="홍길동3" sex="남자"/>
+</sawon-info>

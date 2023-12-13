@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+  <bean id="list" class="com.sist.model.ListModel"/>
+  <bean id="insert" class="com.sist.model.InsertModel"/>
+  <bean id="insert_ok" class="com.sist.model.InsertOkModel"/>
+  <bean id="detail" class="com.sist.model.DetailModel"/>
+</beans>

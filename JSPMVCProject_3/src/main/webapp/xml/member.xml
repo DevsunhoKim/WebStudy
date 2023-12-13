@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE member SYSTEM "member.dtd">
+
+<member>
+ <list>
+   <id>hong</id>
+   <pwd>1234</pwd>
+   <name>홍길동</name>
+   <address>서울</address>
+   <phone>010-1111-1111</phone>
+ </list>
+</member>

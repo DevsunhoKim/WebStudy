@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+      1. 태그 정의  <!ELEMENT>
+         <!ELEMENT html (head?,body?)>
+         <!ELEMENT head (title?,meta*,script*,style*,link*)>
+         
+         ? => 사용가능 / 미사용
+         * => 0번 이상
+         | => 선택   (th|td)*
+         + => 1번 이상
+         defualt => 반드시 사용
+         
+      2. 속성 정의  <!ATTLIST>
+      3. 변수 정의  <!ENTITY>
+        <!ENTITY nbsp ' '> =>  &nbps;
+        <!ENTITY li '<'>   => &lt;
+        #PCDATA => 태그 사이에 문자를 출력
+ -->
+ <!ELEMENT member (list+)>
+ <!ELEMENT list (id,pwd,name,address,(phone|tel),content?)>
+ <!ELEMENT id (#PCDATA)>
+ <!ELEMENT pwd (#PCDATA)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT address (#PCDATA)>
+ <!ELEMENT phone (#PCDATA)>
+ <!ELEMENT tel (#PCDATA)>
+ <!ELEMENT content (#PCDATA)>
+ 
+ 
+ 
