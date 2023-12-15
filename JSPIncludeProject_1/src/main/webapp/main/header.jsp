@@ -6,7 +6,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="../main/main.do">부산 여행</a>
@@ -32,7 +32,8 @@
                           .do ==> 처리 (SeoulModel=> 메소드)
                          -->
                         <li><a href="../seoul/nature.do">자연&관광</a></li>
-                        <li><a href="../seoul/shop.do">쇼핑</a></li>
+                       
+                        <li><a href="../seoul/shop.do">스토어</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -44,7 +45,7 @@
                         
                     </ul>
                 </li>
-                <li ><a href="#">스토어</a></li>
+                <li ><a href="../store/all.do">스토어</a></li>
             </ul>
         </div>
     </nav>

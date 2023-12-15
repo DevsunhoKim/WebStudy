@@ -4,4 +4,5 @@
   <bean id="food" class="com.sist.model.FoodModel"></bean>
   <bean id="seoul" class="com.sist.model.SeoulModel"></bean>
   <bean id="ex" class="com.sist.model.ExModel"></bean>
+  <bean id="store" class="com.sist.model.StoreModel"></bean>
 </beans>
