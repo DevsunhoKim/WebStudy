@@ -8,8 +8,7 @@ import com.sist.vo.*;
 public class ExDAO {
 	   private Connection conn;
 	   private PreparedStatement ps;
-	   private CreateDBCPConnection dbconn=
-			       new CreateDBCPConnection();
+	   private CreateDBCPConnection dbconn;
 	   private static ExDAO dao;
 	   
 	  
