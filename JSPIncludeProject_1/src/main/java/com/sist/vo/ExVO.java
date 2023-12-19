@@ -1,5 +1,5 @@
 package com.sist.vo;
-
+import java.util.*;
 public class ExVO {
 	/*
 	 *  이름                                      널?      유형
@@ -27,6 +27,7 @@ public class ExVO {
 	private int eno,pirce;
 	private String ename,eename,efield,eitem,cate,homepage
 	,loc,loc_detail,host,poster;
+	private Date s_date,e_date;
 	public int getEno() {
 		return eno;
 	}

@@ -3,7 +3,7 @@ package com.sist.model;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sist.controller.RequestMapping;
+import com.sist.controller.*;
 /*
  *  1. DispatcherServlet
  *   => WEB-INF => application에 있는 클래스 명을 읽어온다

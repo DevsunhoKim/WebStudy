@@ -4,7 +4,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sist.controller.RequestMapping;
+import com.sist.controller.*;
 import com.sist.dao.GoodsDAO;
 /*
  *   DAO => 오라클 연결 

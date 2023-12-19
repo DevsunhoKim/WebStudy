@@ -3,7 +3,7 @@ package com.sist.model;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sist.controller.RequestMapping;
+import com.sist.controller.*;
 import java.util.*;
 import com.sist.dao.*;
 import com.sist.vo.SeoulVO;
