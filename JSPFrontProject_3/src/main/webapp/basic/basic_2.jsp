@@ -51,7 +51,21 @@ window.onload=function(){
 	d=!d;
 	document.write("d="+d+"<br>") // false
 	// 0이 아닌 모든수는 true => 0,0.0 => false
+	document.write("<hr>");
+	// 형변환 
+	let e="10"
+	document.write("e="+typeof e+"<br>")
+	document.write("e="+typeof Number(e)+"<br>")
+	document.write("e="+typeof parseInt(e)+"<br>")
 	
+	document.write("e="+typeof Boolean(e)+","+Boolean(e)+"<br>")
+	/*
+	   자바와 다른점 
+	   = 숫자 => 문자열 , Boolean으로 변경이 가능 
+	                   ===============
+	   = 변수에는 데이터형을 사용하지 않는다 (let,const) => typeof 
+	   = 모든 숫자는 true/false로 변경이 가능하다 (0,0.0)
+	*/
 }
 </script>
 </head>
