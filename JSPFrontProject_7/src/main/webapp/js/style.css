@@ -1,0 +1,73 @@
+@charset "UTF-8";
+	/*.container{
+		margin-top:50px;
+	}
+	.row{
+		margin:0px auto;
+		width: 850px;
+	}*/
+	#image{
+		width: 100%;
+		height: 350px;
+		border-radius: 10px;
+	}
+	#title,#price{
+		font-size: 23px;
+		font-weight: bold;
+	}
+	#sub{
+		color:darkgray;
+	}
+	#percent{
+		font-size: 23px;
+		font-weight: bold;
+		color: red;
+	}
+	#label{
+		color:green;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	#price2{
+		font-size: 23px;
+		color: green;
+		font-weight: bold;
+	}
+	#star{
+		color: orange;
+		font-weight: bold;
+	}
+	#bold{
+		font-weight: bold;
+	}
+	#count{
+		color: darkgray;
+	}
+	img[src*="delivery3"]{
+		width: 20px;
+		height: 20px;
+	}
+	#delivery{
+		color:darkgray;	
+	}
+	#sel{
+		width: 100%;
+		height: 35px;
+	}
+	/* 공통적용 */
+	#cart,#buy{
+		width: 265px;
+		height: 50px;
+		border: green solid;
+		font-size: 20px;
+		font-weight: bold;
+		border-radius: 10px;
+	}
+	#cart{
+		background-color: #FFF;
+		color: green;
+	}
+	#buy{
+		background-color: green;
+		color: #FFF;
+	}
